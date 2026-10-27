@@ -1,16 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#main img", {
-  scale: 1.3,
+  scale: 1.5,
   ease: "none",
-
   scrollTrigger: {
     trigger: "#main",
     start: "top top",
-    end: "+=100",
+    end: "+=500",
     scrub: 1,
-    pin: true,
     markers: true,
-    anticipatePin: 1
+    pin: true,
+    anticipatePin: 1,
   }
-});
+})
