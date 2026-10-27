@@ -38,11 +38,12 @@ html, body{
   position: fixed;
   z-index: 6;
   left: 7%;
-  top: 35%;
+  top: 45%;
   font-size: 2rem;
   width: 30%;
   color: white;
   pointer-events: none;
+  opacity: 0;
 }
 
 #page1, #page2{
