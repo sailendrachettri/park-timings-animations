@@ -14,12 +14,12 @@ const tl1 = gsap.timeline({
 });
 
 tl1.to("#main img", {
-  scale: 1.5,
+  scale: 1.2,
   ease: "none",
   duration: 3,
 });
 
-tl1.to("#head", {
+tl1.to("#head1, #head2", {
   opacity: 0,
   ease: "none",
   duration: 1,
