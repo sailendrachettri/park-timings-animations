@@ -4,8 +4,8 @@ const tl1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#main",
     start: "top top",
-    end: "+=100",
-    scrub: 1,
+    end: "+=500",
+    scrub: true,
     pin: true,
     markers: true,
     anticipatePin: 1,
@@ -35,9 +35,9 @@ const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: "#page1",
     start: "top top",
-    end: "+=300",
+    end: "+=500",
     pin: true,
-    scrub: 1,
+    scrub: true,
     markers: true,
   },
 });
@@ -56,6 +56,6 @@ tl2.to("#page1", {
 
 tl2.from("#page1 #sun", {
   scale: 100,
-  // duration: 13,
+  duration: 3,
   filter: "blur(10px)"
 });
