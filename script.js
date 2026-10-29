@@ -1,16 +1,15 @@
-
 gsap.registerPlugin(ScrollTrigger);
 
 const tl1 = gsap.timeline({
   scrollTrigger: {
     trigger: "#main",
     start: "top top",
-    end: "+=500",
+    end: "+=100",
     scrub: 1,
     pin: true,
     markers: true,
     anticipatePin: 1,
-  }
+  },
 });
 
 tl1.to("#main img", {
@@ -30,3 +29,33 @@ tl1.to("#title", {
   ease: "none",
   duration: 1,
 });
+
+// page 1 yellow sun
+const tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page1",
+    start: "top top",
+    end: "+=300",
+    pin: true,
+    scrub: 1,
+    markers: true,
+
+    // onLeave: () => {
+    //    gsap.killTweensOf("#page1", "backgroundColor");
+
+    //   gsap.set("#page1", {
+    //     backgroundColor: "white",
+    //   });
+    // },
+  },
+});
+
+tl2.to("#page1", {
+  backgroundColor: "yellow",
+});
+
+
+tl2.from("#page1 #sun", {
+  scale: 100,
+  duration: 3
+})
