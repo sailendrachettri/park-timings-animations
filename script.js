@@ -39,23 +39,23 @@ const tl2 = gsap.timeline({
     pin: true,
     scrub: 1,
     markers: true,
-
-    // onLeave: () => {
-    //    gsap.killTweensOf("#page1", "backgroundColor");
-
-    //   gsap.set("#page1", {
-    //     backgroundColor: "white",
-    //   });
-    // },
   },
 });
 
 tl2.to("#page1", {
-  backgroundColor: "yellow",
+  backgroundColor: "#F9C518",
 });
 
+tl2.to("#page1 #sun", {
+  opacity: 1
+});
+
+tl2.to("#page1", {
+  backgroundColor: "white",
+});
 
 tl2.from("#page1 #sun", {
   scale: 100,
-  duration: 3
-})
+  // duration: 13,
+  filter: "blur(10px)"
+});
