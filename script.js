@@ -56,8 +56,8 @@ tl2.to("#page1", {
 });
 
 tl2.from("#page1 #sun", {
-  
+  duration:2.5,
+ease: "slow(0.1,2,false)",
   scale: 100,
-  duration: 3,
   filter: "blur(10px)"
 });
