@@ -32,10 +32,11 @@ tl1.to("#title", {
 
 // page 1 yellow sun
 const tl2 = gsap.timeline({
+  
   scrollTrigger: {
     trigger: "#page1",
     start: "top top",
-    end: "+=500",
+    end: "+=600",
     pin: true,
     scrub: true,
     markers: true,
@@ -47,7 +48,7 @@ tl2.to("#page1", {
 });
 
 tl2.to("#page1 #sun", {
-  opacity: 1
+  opacity: 1,
 });
 
 tl2.to("#page1", {
@@ -55,6 +56,7 @@ tl2.to("#page1", {
 });
 
 tl2.from("#page1 #sun", {
+  
   scale: 100,
   duration: 3,
   filter: "blur(10px)"
