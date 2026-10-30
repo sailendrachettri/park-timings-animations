@@ -32,7 +32,6 @@ tl1.to("#title", {
 
 // page 1 yellow sun
 const tl2 = gsap.timeline({
-  
   scrollTrigger: {
     trigger: "#page1",
     start: "top top",
@@ -56,8 +55,11 @@ tl2.to("#page1", {
 });
 
 tl2.from("#page1 #sun", {
-  duration:2.5,
-ease: "slow(0.1,2,false)",
+  duration: 2.5,
+  ease: "slow(0.1,2,false)",
   scale: 100,
-  filter: "blur(10px)"
+  filter: "blur(10px)",
 });
+
+// page 2 animation
+
